@@ -1,7 +1,6 @@
 <?php
 require_once __DIR__ . "/db.php";
 
-var_dump($db);
 ?>
 
 <!DOCTYPE html>
@@ -14,5 +13,17 @@ var_dump($db);
 </head>
 <body>
     <h1>DISCHI</h1>
+
+    <div>
+        <ul>
+            <?php foreach($db['response'] as $disc): ?>
+                <li><img src="<?php echo $disc['poster']?>" alt=""></li>
+                <li><?php echo $disc['title']?></li>
+                <li><?php echo $disc['author']?></li>
+                <li><?php echo $disc['genre']?></li>
+                <li><?php echo $disc['year']?></li><hr>
+            <?php endforeach;?>
+        </ul>
+    </div>
 </body>
 </html>
