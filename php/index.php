@@ -17,7 +17,7 @@ require_once __DIR__ . "/db.php";
 </head>
 <body>
     <h1>DISCHI</h1>
-
+    
     <div id="contenitore">
         <ul id="box-disc">
             <?php foreach($db['response'] as $disc): ?>
@@ -31,5 +31,6 @@ require_once __DIR__ . "/db.php";
             <?php endforeach;?>
         </ul>
     </div>
+
 </body>
 </html>
