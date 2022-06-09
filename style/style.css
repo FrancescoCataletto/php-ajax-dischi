@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#contenitore{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#box-disc{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#box-disc div{
+    width: calc(100% / 3);
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
